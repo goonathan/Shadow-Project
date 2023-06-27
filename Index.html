@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request</title>
+    <title>Vacancy request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form action="">
-        <h3>Personal Details</h3>
+    <div style="width: 80%; margin:auto;">
+        <form action="">
+            <h3>Personal Details</h3>
+            
+            <div class="form-group">
+                <label for="name">Name</label> 
+                <input class="form-control" type="text" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input class="form-control" type="text" name = "surname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input class="form-control" type="tel" pattern="(021) 130-1949" name="phone" placeholder="0692844276">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email" required>
+            </div>
 
-        <label for="name">Name</label> 
-        <input type="text" name="name" required>
-        <br><br>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" type="text" name = "username" required>
+            </div>
 
-        <label for="surname">Surname</label>
-        <input type="text" name = "surname" required>
-        <br><br>
-
-        <label for="phone">Phone</label>
-        <input type="number" name="phone">
-        <br><br>
-
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
-        <br><br>
-
-        <label for="username">Username</label>
-        <input type="text" name = "username" required>
-        <br><br>
-
-        <label for="password">Password</label>
-        <input type="password" name="password" required>
-        <br><br><br>
-
-        <h3>Job Details</h3>
-        <label for="job">Job Title</label>
-        <input type="text" name="job" required>
-        <br><br>
-
-        <label for="sal">Desired Salary Range</label>
-        <input type="number" name="sal1" required>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" required>
+            </div>
         
-        -
-        <input type="number" name="sal" required>
-        <br><br>
+            <br><br><br>
 
-        <label for="cv">Attach CV</label>
-        <br>
+            <h3>Job Details</h3>
+            <div class="form-group">
+                <label for="job">Job Title</label>
+                <input class="form-control" type="text" name="job" required>
+            </div>
 
-        <input type="file" name="cv" required>
-        <br><br><br>
+            <div class="form-group">
+                <label for="sal">Desired Salary Range</label>
+                <input type="number" name="sal1" required> - <input type="number" name="sal" required>
+            </div>
 
-        <button type="submit" onclick="alert('Your request has been submitted')">SUBMIT</button>
-        <br>
-        You should get a response within a week
-
+            <div class="form-group">
+                <label for="cv">Attach CV</label>
+            </div>
         
+            <div class="form-group">
+                <input type="file" name="cv" required>
+            </div>
+            
+            <br><br><br>
 
-        
+            <button type="submit" class="btn btn-success" onclick="alert('You should get a response within a week')">SUBMIT</button>
+            <br>
 
-    </form>
+        </form>
+    </div>
 </body>
 </html>
