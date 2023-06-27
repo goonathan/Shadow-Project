@@ -8,29 +8,52 @@
 <body>
     <form action="">
         <h3>Personal Details</h3>
-        <label for="name">Name</label>
-        <input type="text" name="name"><br><br>
+
+        <label for="name">Name</label> 
+        <input type="text" name="name" required>
+        <br><br>
+
         <label for="surname">Surname</label>
-        <input type="text" name = "surname"><br><br>
+        <input type="text" name = "surname" required>
+        <br><br>
+
         <label for="phone">Phone</label>
-        <input type="tel" name="phone"><br><br>
+        <input type="number" name="phone">
+        <br><br>
+
         <label for="email">Email</label>
-        <input type="email" name="email"><br><br>
+        <input type="email" name="email" required>
+        <br><br>
+
         <label for="username">Username</label>
-        <input type="username" name = "username"><br><br>
+        <input type="text" name = "username" required>
+        <br><br>
+
         <label for="password">Password</label>
-        <input type="password" name="password"><br><br><br>
+        <input type="password" name="password" required>
+        <br><br><br>
+
         <h3>Job Details</h3>
         <label for="job">Job Title</label>
-        <input type="text" name="job"><br><br>
+        <input type="text" name="job" required>
+        <br><br>
+
         <label for="sal">Desired Salary Range</label>
-        <input type="text" name="sal1">
-        <label for="">-</label>
-        <input type="text" name="sal"><br><br>
-        <label for="cv">Attach CV</label><br>
-        <input type="file" name="cv"><br><br><br>
-        <input type="button" value="SUBMIT">
-        <br>You should get a response within a week
+        <input type="number" name="sal1" required>
+        
+        -
+        <input type="number" name="sal" required>
+        <br><br>
+
+        <label for="cv">Attach CV</label>
+        <br>
+
+        <input type="file" name="cv" required>
+        <br><br><br>
+
+        <button type="submit" onclick="alert('Your request has been submitted')">SUBMIT</button>
+        <br>
+        You should get a response within a week
 
         
 
